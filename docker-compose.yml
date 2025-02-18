@@ -1,0 +1,38 @@
+version: '1.0'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_db
+    restart: always
+    environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: wifi_access_points
+        MYSQL_USER: root
+        MYSQL_PASSWORD: P4ssw0rd@
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - app_network
+
+  app:
+    build: .
+    container_name: graph_ql_api
+    restart: always
+    depends_on:
+        - mysql
+    environment:
+          SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/wifi_access_points?createDatabaseIfNotExist=true&useSSL=false&serverTimezone=UTC
+          SPRING_DATASOURCE_USERNAME: root
+          SPRING_DATASOURCE_PASSWORD: P4ssw0rd@
+    ports:
+        - "8080:8080"
+    networks:
+        - app_network
+volumes:
+  mysql_data:
+
+networks:
+    app_network:
