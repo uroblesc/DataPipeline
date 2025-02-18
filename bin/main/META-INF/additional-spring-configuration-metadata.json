@@ -1,0 +1,37 @@
+{"properties": [
+  {
+    "name": "app.files.csv-path",
+    "type": "java.lang.String",
+    "description": "A description for 'app.files.csv-path'"
+  },
+  {
+    "name": "app.files.graphql-path",
+    "type": "java.lang.String",
+    "description": "A description for 'app.files.graphql-path'"
+  },
+  {
+    "name": "pagination.default-page",
+    "type": "java.lang.String",
+    "description": "A description for 'pagination.default-page'"
+  },
+  {
+    "name": "pagination.default-size",
+    "type": "java.lang.String",
+    "description": "A description for 'pagination.default-size'"
+  },
+  {
+    "name": "app.files.sql-path",
+    "type": "java.lang.String",
+    "description": "A description for 'app.files.sql-path'"
+  },
+  {
+    "name": "graphql.servlet.timeout",
+    "type": "java.lang.String",
+    "description": "A description for 'graphql.servlet.timeout'"
+  },
+  {
+    "name": "app.files.sqlfile-path",
+    "type": "java.lang.String",
+    "description": "A description for 'app.files.sqlfile-path'"
+  }
+]}
