@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.develop.exception.GraphQLHandlerExceptionTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-02-19T02:22:03" hostname="MSI" time="0.068">
+  <properties/>
+  <testcase name="testGraphQLError()" classname="com.develop.exception.GraphQLHandlerExceptionTest" time="0.001"/>
+  <testcase name="testHandleIllegalArgumentException()" classname="com.develop.exception.GraphQLHandlerExceptionTest" time="0.0"/>
+  <testcase name="testHandleValidationException()" classname="com.develop.exception.GraphQLHandlerExceptionTest" time="0.065"/>
+  <system-out><![CDATA[2025-02-18 20:22:03.521  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Iniciando Prueba testGraphQLError
+2025-02-18 20:22:03.521  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Iniciando Prueba testHandleIllegalArgumentException
+2025-02-18 20:22:03.521  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Error: Error de validación: Dato inválido
+2025-02-18 20:22:03.521  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Error: BAD_REQUEST
+2025-02-18 20:22:03.521  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Iniciando Prueba testHandleValidationException
+2025-02-18 20:22:03.599  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Error: Error en campo 'nombre : No puede estar vacío
+2025-02-18 20:22:03.599  INFO 2064 --- [    Test worker] c.d.e.GraphQLHandlerExceptionTest        : Error: BAD_REQUEST
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

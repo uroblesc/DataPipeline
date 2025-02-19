@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.develop.graphql.AccessPointGraphQLTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-02-19T02:22:03" hostname="MSI" time="0.087">
+  <properties/>
+  <testcase name="testGetWifiAccessByProximity()" classname="com.develop.graphql.AccessPointGraphQLTest" time="0.078"/>
+  <testcase name="testGetWifiAccessByColoniaWithEmptyColonia()" classname="com.develop.graphql.AccessPointGraphQLTest" time="0.002"/>
+  <testcase name="getWifiAccessTest()" classname="com.develop.graphql.AccessPointGraphQLTest" time="0.002"/>
+  <testcase name="getWifiAccessByIdTest()" classname="com.develop.graphql.AccessPointGraphQLTest" time="0.001"/>
+  <testcase name="testGetWifiAccessByColonia()" classname="com.develop.graphql.AccessPointGraphQLTest" time="0.002"/>
+  <system-out><![CDATA[2025-02-18 20:22:03.677 ERROR 2064 --- [    Test worker] com.develop.graphql.AccessPointGraphQL   : Colonia no puede venir vacio
+2025-02-18 20:22:03.677  INFO 2064 --- [    Test worker] com.develop.graphql.AccessPointGraphQL   : Busqueda de Puntos de Acceso: Page [0] & Size: [10]
+2025-02-18 20:22:03.677  INFO 2064 --- [    Test worker] com.develop.graphql.AccessPointGraphQL   : Busqueda getWifiAccessByColonia: CENTRO
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

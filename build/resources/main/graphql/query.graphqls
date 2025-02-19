@@ -1,0 +1,24 @@
+type AccessPoint {
+	id: String!
+	programa: String!
+	fechaInstalacion: String
+	latitud: Float!
+	longitud: Float!
+	colonia: String!
+	alcaldia: String!
+}
+
+type AccessPointPage{
+	content: [AccessPoint]
+	totalPages: Int
+	size: Int
+	totalElements: Int
+	number: Int
+}
+
+type Query {
+	getWifiAccess(page: Int, size: Int): [AccessPoint]
+	getWifiAccessById(id: String!): AccessPoint
+	getWifiAccessByColonia(colonia: String!, page: Int, size: Int): AccessPointPage
+	getWifiAccessByProximity(lat: Float!, lon: Float!, page: Int, size: Int): AccessPointPage
+}
