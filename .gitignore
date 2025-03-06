@@ -1,0 +1,13 @@
+# Archivos y carpetas compiladas de Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Directorios de compilación de Gradle y Maven
+/build/
+out/
+target/
+
+# Archivos de caché de Gradle
+.gradle/
